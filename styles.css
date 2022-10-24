@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: calibri;
+    background-color: rgb(215, 229, 240);
+}
+
+#container {
+    /* min-height:100%; */
+    position:relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#maintitle {
+    text-align: center;
+  }
+/* Banner */
+.banner {
+    background-image: url("photos/banner.jpg");
+    height: 30vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .banner-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+  }
+
+/* Navigation Bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: calibri;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  #home {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #222;
+  }
+  
+  li a.active {
+    background-color: #222;
+  }
+
+/* Content */
+
+#content {
+    padding-top: 5vh;
+    width: 80vw;
+    min-height:10vh;
+    flex-grow: 1;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 1vh;
+}
+#content2 {
+  padding-top: 5vh;
+  width: 80vw;
+  min-height:10vh;
+  flex-grow: 1;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 1vh;
+}
+
+/* Footer Styling */
+
+/* Footer */
+#footer {
+    position: relative;
+    bottom:0;
+    height: 5.2rem; /* Height of the footer 5rem */
+    width: 100%;
+    min-height: 10vh;
+    background-color: #f2f2f2;
+    line-height: 40px; /*Specifies the line height.*/
+    min-width: 100vw; /* 400px */
+}
+
+/* Oberer Bereich */
+.ctry {
+    display: flex;
+    margin-left: 30px;
+    color: rgb(40, 40, 40);
+}
+
+/* Unterer Bereich */
+.opt_ftr {
+    display: flex;
+    justify-content:space-between;
+    border-top:  1px solid #e4e4e4;
+}
+
+/* Text Links und Text Rechts */
+span.blft_ftr a, span.brght_ftr a /*, span.brght_stg a*/ {
+    color: #666;
+    margin-left: 16px;
+}
+
+.blft_ft
+{
+  float: left;
+}
+
+/* Text Rechts */
+.brght_ftr{
+    margin-right: 30px;
+    float: right;
+}
+
+/* Text */
+.adv_ftr {
+    padding: 0 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Responsiv */
+@media screen and (max-width: 600px) {
+  .ctry, .opt_ftr {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ctry, .opt_ftr {
+    font-size: 2vw;
+  }
+}
+
+/* Portfolio */
+
+/* Rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* 4 Kolonnen */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  /* Kolonnen Bilder */
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive (unter 800px Breite): 2 Kolonnen Anstatt 4 */
+  @media screen and (max-width: 1000px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive (unter 600px Breite): 1 Kolonne anstatt 2*/
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Formular */
+  
+#formular {
+    text-align: center;
+  }
+  
+  #name {
+    width: 200px;
+    margin-left: 10px;
+  }
+  
+  #tel {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+  
+  }
+  
+  #email {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  #date {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  #number {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  
+  #auftrag {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  #details {
+    margin-top: 10px;
+  }
+  
+  #absenden {
+    width: 200px;
+    margin-top: 10px;
+  }
+  
+  /* Tabelle Angebot */
+  table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  td, th {
+    border: 1px solid #858585;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #46cbcb20;
+  }

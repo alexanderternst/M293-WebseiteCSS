@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="body">
+    <div id="container">
+    <div class="banner">
+        <div class="banner-text">
+            <h1 style="font-size:40px">Fotografie Alexander</h1>
+        </div>
+    </div>
+
+    <ul>
+        <li id="home"><a href="index.html">Home</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="anmeldung.html">Anmeldung</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="angebot.html">Angebot</a></li>
+    </ul>
+    <div class="container" id="content">
+
+
+        <h1 style="text-align: center;">Auftragsanmeldung</h1>
+
+        <div style="float:center;" id="formular">
+
+            <form action="" method="get">
+                <p>Kontaktieren Sie uns für einen Auftrag!</p>
+
+                <label for="name">Kundenname</label>
+                <input type="text" id="name" placeholder="Geben Sie ihren Namen ein.">
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Geben Sie ihre Email ein.">
+                <br>
+                <label for="tel">Telefon-Nummer</label>
+                <input type="tek" id="tel">
+                <br>
+                <label for="date">Auftrags-Datum</label>
+                <input type="date" id="date">
+                <br>
+                <label for="number">Anzahl Stunden</label>
+                <input type="number" id="number" value="0" min="1">
+                <br>
+                <select name="auftrag" id="auftrag">
+                    <option value="" id="">Auftragsart auswählen</option>
+                    <option value="portrait" id="portrait">Portrait-Fotografie</option>
+                    <option value="hochzeit" id="hochzeit">Hochzeit-Fotografie</option>
+                    <option value="landschaft" id="landschaft">Landschaft-Fotografie</option>
+                    <option value="videografie" id="videografie">Videografie-Auftrag</option>
+                </select>
+                <br>
+                <textarea name="details" id="details" cols="30" rows="10"
+                    placeholder="Geben Sie weitere Details zum Auftrag an" minlength="10"></textarea>
+                <br>
+                <input type="submit" name="absenden" id="absenden" value="Absenden">
+            </form>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <div class="ctry">
+            <span class="ctry_ftr">
+                Weitere Informationen:
+            </span>
+        </div>
+        <div class="opt_ftr">
+            <span class="blft_ftr">
+                <a class="adv_ftr" href="copyright.html">Copyright @ 2022 Verband Fotografie Alexander.</a>
+            </span>
+            <span class="brght_ftr">
+                <a class="adv_ftr" href="agb.html">AGB</a>
+                <a class="adv_ftr" href="kontakt.html">Impressum</a>
+            </span>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
